@@ -1,0 +1,81 @@
+body{
+
+	background: linear-gradient(hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%) no-repeat;
+	padding:150px;
+	width:1440px;
+	height: 900px;
+	overflow: hidden;
+}
+
+.main{
+	width:960px;
+	padding:50px;
+	border-radius:10px;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items:flex-end;
+	background:
+	url(images/illustration-box-desktop.svg) 70px 420px no-repeat fixed,
+	url(images/illustration-woman-online-desktop.svg) 100px 300px no-repeat fixed,
+	url(images/bg-pattern-desktop.svg) -400px -50px no-repeat fixed;
+
+	background-color:white;
+}
+
+.hider{
+	background-color:white;
+	border:none;
+	padding:10px 10px 10px 0;
+	margin:10px;
+}
+
+.hider:hover{
+	color:orange;
+}
+
+section{
+	width:480px;
+}
+
+.h1{
+	align-self:flex-start;
+	font-size:40px;
+}
+
+
+
+.arrow{
+	text-align:right;
+	padding:10px;
+}
+
+
+
+@media screen and (max-width: 375px){
+	body{
+		width:350px;
+		height:1000px;
+		padding:5px;
+		overflow: auto;
+		background:
+		url(images/illustration-woman-online-mobile.svg) 20px 20px no-repeat fixed,
+	url(images/bg-pattern-mobile.svg) 40px 80px no-repeat fixed,
+		linear-gradient(hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%) no-repeat;
+	}
+
+	.main{
+		margin-top:200px;
+		width:330px;
+		background:white;
+		padding:5px;
+		padding-bottom: 10px;
+	}
+
+	section{
+		width:100%;
+	}
+
+
+}

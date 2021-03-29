@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<main class="main">
+
+		<section id="hider1">
+			<h1 class="h1">FAQ</h1>
+  <button class="hider">How many team members can I invite? </button>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <div id="text1" hidden>
+  You can invite up to 2 additional users on the Free plan. There is no limit on 
+  team members for the Premium plan.
+</div>
+<script type="text/javascript">
+	document.getElementById('hider1').onclick = function() {
+      if (document.getElementById('text1').hidden){
+        document.getElementById('text1').hidden = false;
+      }else{
+      document.getElementById('text1').hidden = true;
+    }}
+
+</script>
+<hr>
+</section>
+<section id="hider2">
+  <button  class="hider">What is the maximum file upload size?</button>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <div id="text2" hidden>
+  No more than 2GB. All files in your account must fit your allotted storage space.</div>
+<script type="text/javascript">
+	document.getElementById('hider2').onclick = function() {
+      if (document.getElementById('text2').hidden){
+        document.getElementById('text2').hidden = false;
+      }else{
+      document.getElementById('text2').hidden = true;
+    }}
+
+</script>
+<hr>
+</section>
+
+<section id="hider3">
+  <button  class="hider">How do I reset my password?          </button>
+  	<span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+    <div id="text3" hidden>Click “Forgot password” from the login page or “Change password” from your profile page.
+  A reset link will be emailed to you.</div>
+  <script type="text/javascript">
+	document.getElementById('hider3').onclick = function() {
+      if (document.getElementById('text3').hidden){
+        document.getElementById('text3').hidden = false;
+      }else{
+      document.getElementById('text3').hidden = true;
+    }}
+
+</script>
+<hr>
+</section>
+
+<section id="hider4">
+	<button  class="hider">
+  Can I cancel my subscription?</button>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <div id="text4" hidden>Yes! Send us a message and we’ll process your request no questions asked.</div>
+   <script type="text/javascript">
+	document.getElementById('hider4').onclick = function() {
+      if (document.getElementById('text4').hidden){
+        document.getElementById('text4').hidden = false;
+      }else{
+      document.getElementById('text4').hidden = true;
+    }}
+
+</script>
+<hr>
+</section>
+
+<section id="hider5">
+	<button  class="hider">
+  Do you provide additional support?</button>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <div id="text5" hidden>
+  Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+  <script type="text/javascript">
+	document.getElementById('hider5').onclick = function() {
+      if (document.getElementById('text5').hidden){
+        document.getElementById('text5').hidden = false;
+      }else{
+      document.getElementById('text5').hidden = true;
+    }}
+
+</script>
+<hr>
+  </section>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Anzee137">Artyom</a>.
+  </div>
+</body>
+</html>
